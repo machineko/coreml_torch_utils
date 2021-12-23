@@ -1,0 +1,31 @@
+[project]
+name = "coreml_pytorch_utils"
+version = "0.1.0"
+description = "Coreml utils that helps export pytorch based models"
+authors = [
+    {name = "machineko", email = "machineko@protonmail.com"},
+]
+dependencies = [
+    "coremltools",
+    "pytest",
+    "future",
+]
+
+requires-python = ">=3.9"
+license = {text = "EUPL-1.2"}
+
+[project.urls]
+homepage = "https://github.com/machineko/coreml_torch_utils"
+
+[project.optional-dependencies]
+[tool.pdm.dev-dependencies]
+test = ["pytest", "torch==1.10.1", "pytest-cov", "nox"]
+lint = ["black"]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+]
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"

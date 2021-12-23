@@ -1,0 +1,10 @@
+__pypackages__
+__pycache__/
+.pdm.toml
+.nox*
+.pytest*
+dist
+docs
+site
+.vscode
+.coverage
