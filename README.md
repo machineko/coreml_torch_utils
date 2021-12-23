@@ -11,6 +11,7 @@
 
 
 ```python
+from coreml_torch_utils import InputEnumeratedShapeImage, OutputDynamicImage, RenameOutput, CoreExporter
 from torch import nn
 model = nn.Sequential(nn.Conv2d(3, 6, kernel_size=(1, 1)), nn.Conv2d(6, 3, kernel_size=(1, 1)))
 model.eval()

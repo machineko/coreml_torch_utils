@@ -1,5 +1,5 @@
 import pytest
-from coreml_utils.utils import (
+from coreml_torch_utils.utils import (
     RenameOutput,
     InputEnumeratedShapeImage,
     CoreExporter,
