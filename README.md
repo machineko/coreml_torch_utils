@@ -7,8 +7,12 @@
 # Small Coreml utils for deep learning models
 ### * utils are tested for pytorch but should work for any deep learning framework
 
-## Example Usage
+## Install
+```
+pip install coreml-pytorch-utils
+```
 
+## Example Usage
 
 ```python
 from torch import nn
