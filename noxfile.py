@@ -9,7 +9,7 @@ os.environ.pop("PYTHONPATH", None)
 @nox.session
 def tests(session): # pragma: no cover
     session.run("pdm", "install", "-G", "test", external=True)
-    session.run("pytest", "coreml_utils/tests/", "--cov=coreml_utils", "--cov-report=xml", "-W", "ignore::DeprecationWarning")
+    session.run("pytest", "tests/", "--cov=coreml_utils", "--cov-report=xml", "-W", "ignore::DeprecationWarning")
 
 @nox.session()
 def lint(session): # pragma: no cover

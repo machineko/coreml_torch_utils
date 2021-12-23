@@ -1,13 +1,12 @@
 [project]
 name = "coreml_pytorch_utils"
-version = "0.1.0"
+version = "0.1.1"
 description = "Coreml utils that helps export pytorch based models"
 authors = [
     {name = "machineko", email = "machineko@protonmail.com"},
 ]
 dependencies = [
-    "coremltools",
-    "pytest",
+    "coremltools>=5.0",
     "future",
 ]
 
